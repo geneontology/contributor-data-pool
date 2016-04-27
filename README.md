@@ -61,33 +61,23 @@ The top-level directory "_goc/" should not be used.
 # pool.yaml
 
 * name (required)
-
 * identifier (required)
-
 * comment (optional)
-
 * contacts (list, optional)
-
 * about (list, optional)
-
 * description (required)
-
 * data-pools (list, required)
-
 ** format (required)
 
 ...One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc.
 
 ** path (required)
-
 * comment (optional)
-
 ** contributors (list, optional)
 
 ...A list of identified contributors.
 
 ** upstream (list, optional)
-
 ** refresh (optional)
 
 ...A hint about how often you will refresh the data.
