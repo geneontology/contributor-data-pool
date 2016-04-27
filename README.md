@@ -69,18 +69,18 @@ The top-level directory "_goc/" should not be used.
 * data-pools (list, required)
 ** format (required)
 
-...One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc.
+⋅⋅⋅One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc.
 
 ** path (required)
 * comment (optional)
 ** contributors (list, optional)
 
-...A list of identified contributors.
+⋅⋅⋅A list of identified contributors.
 
 ** upstream (list, optional)
 ** refresh (optional)
 
-...A hint about how often you will refresh the data.
+⋅⋅⋅A hint about how often you will refresh the data.
 
 This list is currently very much in flux and will be revised.
 
