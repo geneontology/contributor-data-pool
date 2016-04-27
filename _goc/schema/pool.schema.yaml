@@ -1,0 +1,38 @@
+####
+#### Use kwalify and this schema to validate the pool files.
+####
+#### Examples:
+####    kwalify -f ./_goc/schema/pool.schema.yaml pool.yaml
+####    kwalify -f ./_goc/schema/pool.schema.yaml pool.yaml | grep INVALID; test $? -ne 0
+####
+type: map
+mapping:
+  "name": 
+    type: str
+    required: true
+  "identifier":
+    type: str
+    required: true
+  "description":
+    type: str
+    required: false
+  "comment":
+    type: str
+    required: false
+  "organization":
+    type: str
+    required: false
+  "data-pools":
+    type: seq
+    sequence:
+      - type: map
+        mapping:
+          "format":
+            type: str
+            required: true
+          "path":
+            type: str
+            required: true
+          "comment":
+            type: str
+            required: false

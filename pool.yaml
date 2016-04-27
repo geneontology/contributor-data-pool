@@ -1,0 +1,10 @@
+####
+#### A minimal example of what a data pool must contain. Please see
+#### the README.md in this directory for more information.
+####
+name: GOC Example 01
+identifier: goc-example-01
+description: An example/template for external users who want to contribute data to the Gene Ontology Consortium.
+data-pools:
+  - path: 'example-data/example.gaf'
+    format: 'gaf-2.0'
