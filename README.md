@@ -63,7 +63,7 @@ The top-level directory "_goc/" should not be used.
 Top-level:
 
 | field       | required | cardinality | comment        |
-|-------------+----------+-------------+----------------|
+| --- | --- | ---| --- |
 | name        | yes      |           1 |                |
 | identifier  | yes      |           1 |                |
 | description | yes      |           1 |                |
@@ -74,8 +74,8 @@ Top-level:
 
 data-pools:
 
-| field        | required | cardinality | comment                                                                                         |
-|--------------+----------+-------------+-------------------------------------------------------------------------------------------------|
+| field        | required | cardinality | comment |
+| --- | --- | ---| --- |
 | format       | yes      |           1 | One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc. |
 | path         | yes      |           1 |                                                                                                 |
 | comment      | no       |           1 |                                                                                                 |
