@@ -60,27 +60,28 @@ The top-level directory "_goc/" should not be used.
 
 # pool.yaml
 
-* name (required)
-* identifier (required)
-* comment (optional)
-* contacts (list, optional)
-* about (list, optional)
-* description (required)
-* data-pools (list, required)
-** format (required)
+Top-level:
 
-⋅⋅⋅One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc.
+| field       | required | cardinality | comment        |
+|-------------+----------+-------------+----------------|
+| name        | yes      |           1 |                |
+| identifier  | yes      |           1 |                |
+| description | yes      |           1 |                |
+| comment     | no       |           1 |                |
+| contacts    | no       |           * |                |
+| about       | no       |           * | URLs?          |
+| data-pools  | yes      |           * | see next table |
 
-** path (required)
-* comment (optional)
-** contributors (list, optional)
+data-pools:
 
-⋅⋅⋅A list of identified contributors.
-
-** upstream (list, optional)
-** refresh (optional)
-
-⋅⋅⋅A hint about how often you will refresh the data.
+| field        | required | cardinality | comment                                                                                         |
+|--------------+----------+-------------+-------------------------------------------------------------------------------------------------|
+| format       | yes      |           1 | One of a set of "registered" data types recognized by the GOC. This may include "gaf-2.0", etc. |
+| path         | yes      |           1 |                                                                                                 |
+| comment      | no       |           1 |                                                                                                 |
+| contributors | no       |           * | A list of identified contributors.                                                              |
+| upstream     | no       |           * | URLs?                                                                                           |
+| refresh      | no       |           1 | A hint about how often you will refresh the data. TBD.                                          |
 
 This list is currently very much in flux and will be revised.
 
