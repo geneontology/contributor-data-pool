@@ -82,6 +82,8 @@ data-pools:
 | contributors | no       |           * | A list of identified contributors.                                                              |
 | upstream     | no       |           * | URLs?                                                                                           |
 | refresh      | no       |           1 | A hint about how often you will refresh the data. TBD.                                          |
+| stale      | no       |           1 | TBD.                                          |
+| obsolete      | no       |           1 | TBD.                                          |
 
 This list is currently very much in flux and will be revised.
 
